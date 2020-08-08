@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/46c209df-87fc-4ec7-ab1f-19b5b4337e23/resourceGroups/resource_group_1/providers/Microsoft.Web/sites/AzureKdxWebApi",
+    "appService.deploySubpath": "."
+}
