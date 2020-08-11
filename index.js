@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const db = require('./config/database');
-const http = require('http');
+const cors = require('cors');
 
 db.authenticate()
   .then(() => console.log('MySQL DB Connected..!'))
   .catch(err => console.log('Error: ' + err));
+
+app.use(cors());
 
 // routes for the all requests
 app.use('/persons', require('./routes/personR'));
